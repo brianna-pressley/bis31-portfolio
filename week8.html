@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Week 8 – Signup Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header class="site-header">
+    <h1>Week 8: Signup Form</h1>
+    <p class="subtitle">Processing user input with PHP</p>
+</header>
+
+<nav class="new-nav">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="assignments.html">Assignments</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<section class="hero">
+    <h2>Signup Form</h2>
+    <p>Enter your information below and submit it to the PHP processor.</p>
+</section>
+
+<section class="form-card">
+    <form action="http://briannapressleyphp.infinityfreeapp.com/process.php" 
+          method="POST" 
+          enctype="application/x-www-form-urlencoded">
+
+        <label>Full Name</label>
+        <input type="text" name="fullname" required>
+
+        <label>Email Address</label>
+        <input type="email" name="email" required>
+
+        <label>Favorite Color</label>
+        <input type="text" name="color" required>
+
+        <button type="submit" class="contact-btn">Submit Form</button>
+    </form>
+</section>
+
+<footer>
+    <p>©2026 Brianna Pressley</p>
+</footer>
+
+</body>
+</html>

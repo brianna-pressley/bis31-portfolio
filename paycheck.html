@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Week 11 – Salary Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header class="site-header">
+    <h1>Week 11: Salary Calculator</h1>
+    <p class="subtitle">Calculate employee pay using PHP</p>
+</header>
+
+<nav class="new-nav">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="assignments.html">Assignments</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<section class="hero">
+    <h2>Employee Salary Calculator</h2>
+    <p>Enter hours worked and hourly rate to calculate total pay.</p>
+</section>
+
+<section class="form-card">
+    <form action="http://briannapressleyphp.infinityfreeapp.com/paycheck.php" 
+          method="POST" 
+          enctype="application/x-www-form-urlencoded">
+
+        <label>Hours Worked</label>
+        <input type="number" name="hours" step="0.01" required>
+
+        <label>Rate of Pay ($)</label>
+        <input type="number" name="rate" step="0.01" required>
+
+        <button type="submit" class="contact-btn">Calculate Pay</button>
+    </form>
+</section>
+
+<footer>
+    <p>©2026 Brianna Pressley</p>
+</footer>
+
+</body>
+</html>

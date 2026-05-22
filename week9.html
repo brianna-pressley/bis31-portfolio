@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Week 9 – Data-Driven Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header class="site-header">
+    <h1>Week 9: Data-Driven Form</h1>
+    <p class="subtitle">Saving form data into a MySQL database</p>
+</header>
+
+<nav class="new-nav">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="assignments.html">Assignments</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<section class="hero">
+    <h2>Submit Your Information</h2>
+    <p>This form will save your data into a live MySQL database.</p>
+</section>
+
+<section class="form-card">
+    <form action="http://briannapressleyphp.infinityfreeapp.com/store.php" 
+          method="POST" 
+          enctype="application/x-www-form-urlencoded">
+
+        <label>Full Name</label>
+        <input type="text" name="fullname" required>
+
+        <label>Email Address</label>
+        <input type="email" name="email" required>
+
+        <label>Favorite Food</label>
+        <input type="text" name="food" required>
+
+        <button type="submit" class="contact-btn">Save to Database</button>
+    </form>
+</section>
+
+<footer>
+    <p>©2026 Brianna Pressley</p>
+</footer>
+
+</body>
+</html>
