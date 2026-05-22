@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Random Numbers – BIS31</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header class="site-header">
+    <h1>Random Numbers</h1>
+    <p class="subtitle">Week 7 Assignment</p>
+</header>
+
+<nav class="new-nav">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="assignments.html">Assignments</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<section class="hero">
+    <h2>Random Value Generator</h2>
+    <p>This page displays random numbers generated using PHP.</p>
+</section>
+
+<section class="form-card">
+    <h2>Generated Values</h2>
+
+    <?php
+        echo "<p><strong>Random Number (1–100):</strong> " . rand(1, 100) . "</p>";
+        echo "<p><strong>Random Number (100–500):</strong> " . rand(100, 500) . "</p>";
+        echo "<p><strong>Random Dice Roll (1–6):</strong> " . rand(1, 6) . "</p>";
+    ?>
+</section>
+
+<footer>
+    <p>©2026 Brianna Pressley</p>
+</footer>
+
+</body>
+</html>

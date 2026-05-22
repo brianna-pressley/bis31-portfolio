@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PHP Loops – BIS31</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header class="site-header">
+    <h1>PHP Loops</h1>
+    <p class="subtitle">Week 6 Assignment</p>
+</header>
+
+<nav class="new-nav">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="assignments.html">Assignments</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<section class="hero">
+    <h2>Loop Examples</h2>
+    <p>This page demonstrates PHP loops using a styled output box.</p>
+</section>
+
+<section class="form-card">
+    <h2>Loop Output</h2>
+
+    <?php
+        echo "<p><strong>For Loop:</strong></p>";
+        for ($i = 1; $i <= 5; $i++) {
+            echo "Number: $i<br>";
+        }
+
+        echo "<br><p><strong>While Loop:</strong></p>";
+        $x = 1;
+        while ($x <= 5) {
+            echo "Count: $x<br>";
+            $x++;
+        }
+
+        echo "<br><p><strong>Foreach Loop:</strong></p>";
+        $colors = ["Red", "Green", "Blue", "Yellow"];
+        foreach ($colors as $color) {
+            echo "$color<br>";
+        }
+    ?>
+</section>
+
+<footer>
+    <p>©2026 Brianna Pressley</p>
+</footer>
+
+</body>
+</html>
